@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>659693538963-2p6ni0vsqqf8p8v3i8ic21q5re9hnfga.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.659693538963-2p6ni0vsqqf8p8v3i8ic21q5re9hnfga</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD66nOFJPeRAN6FkHRLQDQiWd9NgJA-i3A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>659693538963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kr.co.handasoft.fortune-tradition</string>
+	<key>PROJECT_ID</key>
+	<string>handa-fortune</string>
+	<key>STORAGE_BUCKET</key>
+	<string>handa-fortune.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:659693538963:ios:41a174cdefb3fc3f8c4766</string>
+	<key>DATABASE_URL</key>
+	<string>https://handa-fortune.firebaseio.com</string>
+</dict>
+</plist>
