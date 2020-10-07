@@ -94,7 +94,6 @@
 		948BB5D5252D8375003A86DF /* sdkTrialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sdkTrialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		948BB5D9252D8375003A86DF /* sdkTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sdkTrialUITests.swift; sourceTree = "<group>"; };
 		948BB5DB252D8375003A86DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		948BB5EB252D839B003A86DF /* frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = frameworks; path = ../frameworks; sourceTree = "<group>"; };
 		948BB5EC252D83AA003A86DF /* AppLovinSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppLovinSDKResources.bundle; path = ../frameworks/AppLovinSDKResources.bundle; sourceTree = "<group>"; };
 		948BB5ED252D83AA003A86DF /* BidmadSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BidmadSDK.framework; path = ../frameworks/BidmadSDK.framework; sourceTree = "<group>"; };
 		948BB5EE252D83AA003A86DF /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../frameworks/AdColony.framework; sourceTree = "<group>"; };
@@ -255,12 +254,11 @@
 				948BB5F5252D83AA003A86DF /* nanopb.framework */,
 				948BB602252D83AB003A86DF /* PersonalizedAdConsent.framework */,
 				948BB5F7252D83AA003A86DF /* PromisesObjC.framework */,
+				948BB5F4252D83AA003A86DF /* VungleSDK.framework */,
 				948BB603252D83AB003A86DF /* UnityAdapter.framework */,
 				948BB5FC252D83AA003A86DF /* UnityAds.framework */,
 				948BB5FF252D83AA003A86DF /* UserMessagingPlatform.framework */,
 				948BB5F1252D83AA003A86DF /* VungleAdapter.framework */,
-				948BB5F4252D83AA003A86DF /* VungleSDK.framework */,
-				948BB5EB252D839B003A86DF /* frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

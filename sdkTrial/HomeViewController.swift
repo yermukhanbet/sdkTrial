@@ -15,13 +15,25 @@ class HomeViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    lazy var showAd: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .lightGray
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 20
+        button.addTarget(self, action: #selector(showAdAction), for: .touchUpInside)
+        return button
+    }()
+    @objc func showAdAction(){
+        BidmadSDKManager.sharedinstance.showRewardVideo()
+    }
     var banner: BIDMADBanner?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        BidmadSDKManager.sharedinstance.showBanner(addview: view_ad, vc: self)
         setAdviewConstraint()
-        BidmadSDKManager.sharedinstance.showInterstitial(vc: self)
-        //setAd(to: view_ad)
+        setshowAdConstraint()
+        setAd(to: view_ad)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,7 +45,12 @@ class HomeViewController: UIViewController {
         super.viewWillDisappear(animated)
          BidmadSDKManager.sharedinstance.removeBanner();
     }
-    private func setNavControll(){
+    private func setshowAdConstraint(){
+        self.view.addSubview(showAd)
+        showAd.topAnchor.constraint(equalTo: view_ad.bottomAnchor, constant: 50).isActive = true
+        showAd.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        showAd.centerXAnchor.constraint(equalTo: view_ad.centerXAnchor).isActive = true
+        showAd.widthAnchor.constraint(equalToConstant: 50).isActive = true
     }
     private func setAdviewConstraint(){
         self.view.addSubview(view_ad)
@@ -43,9 +60,8 @@ class HomeViewController: UIViewController {
         view_ad.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     private func setAd(to view: UIView){
-        BidmadSDKManager.sharedinstance.showBanner(addview: view, vc: self)
         if(!BidmadSDKManager.sharedinstance.isInterstitialLoad){
-            BidmadSDKManager.sharedinstance.loadInterstitial()
+            BidmadSDKManager.sharedinstance.loadRewardVideo()
             print("yes")
         }else{
             print("no")
